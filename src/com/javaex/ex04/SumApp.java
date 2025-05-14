@@ -9,22 +9,25 @@ public class SumApp {
 		int sum = 0;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("숫자를 공백으로 구분해서 입력하세요");
-		//String numLine = sc.nextLine();
+		String numLine = sc.nextLine();
 		
-		int num = sc.nextInt();
+	
 			
 		//코드를 작성하세요
-		//int num = Integer.parseInt("numLine");
-		//System.out.println(num);
 		
+		System.out.println(numLine);
 		
-		
-		for(int i=num; i<=num; i++ ) {
-			sum = sum + i;
+		while(true) {
+			int num = Integer.parseInt(num);
+			num = sc.nextInt(); //숫자입력받음
+			sum = sum + num; //누적
 			
-		}
-		
-		System.out.println("합:" + sum);
+			
+			if(num==0) {//0이면 끝
+				break; //반복문 끝
+			}
+			
+		}System.out.println("합: "+ sum);	
 		
 		sc.close();
 	}
