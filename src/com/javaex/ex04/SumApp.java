@@ -15,11 +15,11 @@ public class SumApp {
 			
 		//코드를 작성하세요
 		
-		System.out.println(numLine);
+		String[] numArr = numLine.split(" ");
 		
-		while(true) {
-			int num = Integer.parseInt(num);
-			num = sc.nextInt(); //숫자입력받음
+		
+		for(int i=0; i<numArr.length; i++) {
+			int num = Integer.parseInt(numArr[i]);
 			sum = sum + num; //누적
 			
 			
